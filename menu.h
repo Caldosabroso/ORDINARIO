@@ -9,4 +9,17 @@ int menuPrincipal(void){
         scanf("%d",&opcion);
         return opcion;
 }
+
+//Submenu para varias o solo una persona
+int MenuAltas(void){
+    int opcion;
+    do{
+        printf("-----------OPCIONES-----------\n¿Cuantas persona desea dar de ALTA?\n");
+        printf("[1] Una persona\n");
+        printf("[2] Varias personas\n");
+        printf("[3] Regresar al menu anterior\n");
+        scanf("%d",&opcion);
+    }while(opcion==3);
+    return opcion;
+}
 #endif
