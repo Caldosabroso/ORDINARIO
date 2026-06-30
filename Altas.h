@@ -134,6 +134,15 @@ void capturarAlumno(struct Alumno *alumno)
 
     printf("Correo: ");
     scanf("%22s", alumno->correo);
+    for(int i = 0; i < 5; i++)
+    {
+        printf("Calificaciones de la materia %d (3 parciales y 1 ordinario):\n", i + 1);
+        for(int j = 0; j < 4; j++)
+        {
+            printf("Calificacion %d: ", j + 1);
+            scanf("%f", &alumno->calificacion[i][j]);
+        }
+    }
 }
 //Funcion insertar en la lista
 void insertarLista(struct Persona **ptr, struct Persona *nuevo)
