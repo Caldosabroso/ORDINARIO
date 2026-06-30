@@ -40,13 +40,13 @@ void eliminarPrimeraPersona(struct Persona **ptr)
 {
     if(*ptr == NULL)
     {
-        printf("La lista está vacía. No hay personas para eliminar.\n");
+        printf("La lista esta vacia. No hay personas para eliminar.\n");
         return;
     }
 
     struct Persona *temp = *ptr;
     *ptr = (*ptr)->ptrSig;
-    printf("Se eliminó a %s\n", temp->nombre);
+    printf("Se elimino a %s\n", temp->nombre);
     // Liberar memoria de la persona eliminada
     free(temp->nombre);
     free(temp->ptrAlum);
