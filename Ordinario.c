@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "menu.h"
 #include "Altas.h"
+#include "Bajas.h"
 int main(){
     int opcion;
     struct Persona *ptr=NULL;
@@ -12,15 +13,20 @@ int main(){
             case 1: altas(&ptr);
         
             break;
-            case 2:
+            case 2: bajas(&ptr);
 
             break;
             case 3:
             break;
             case 4:
             break;
+            case 5: eliminarTodasLasPersonas(&ptr);
+            printf("PROGRAMA FINALIZADO\n");
+            break;
 
-        }
+            default:
+            printf("Opción no válida.\n");
+    }
     }while(opcion!=5);
 
 
