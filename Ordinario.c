@@ -3,6 +3,8 @@
 #include "menu.h"
 #include "Altas.h"
 #include "Bajas.h"
+#include "Especiales.h"
+#include "Mostrar.h"
 int main(){
     int opcion;
     struct Persona *ptr=NULL;
@@ -16,7 +18,7 @@ int main(){
             case 2: bajas(&ptr);
 
             break;
-            case 3:
+            case 3: mostrarPersonas(ptr);
             break;
             case 4:
             break;
