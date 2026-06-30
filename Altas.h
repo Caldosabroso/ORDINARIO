@@ -164,7 +164,7 @@ void agregarVariasPersonas(struct Persona **ptr)
     int respuesta;
     do{
         agregarUnaPersona(ptr);
-        printf("¿Desea agregar otra persona? [1]: Sí, [0]: No: ");
+        printf("Desea agregar otra persona? [1]: Si, [0]: No: ");
         scanf("%d", &respuesta);
         if(respuesta == 0)
         {
